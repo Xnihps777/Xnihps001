@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            height: 2000px;
+            transition: 0.5s;
+        }
+
+        #section-1 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('img/bg01.jpg');
+        }
+
+
+
+
+        .bg-setting {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(225, 225, 225, 0.3);
+            position: relative;
+        }
+
+        #section-1 .mask .text-box {
+            width: 300px;
+            height: 100px;
+            background-color: gold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            font-size: 40px;
+            color: blue;
+            font-weight: 1000;
+            text-align: center;
+            line-height: 100px;
+            letter-spacing: 20px;
+
+            position: absolute;
+            left: calc(50% - 150px);
+            top: calc(50% - 50px);
+        }
+
+        #section-2 {
+            width: 100%;
+            padding: 50px 80px;
+            background-color: white;
+        }
+
+        #section-2 h3 {
+            text-align: center;
+        }
+
+        #section-2 p {
+            text-align: justify;
+        }
+
+        #section-3 {
+            width: 100%;
+            height: 400px;
+            background-image: url('img/bg02.webp');
+            position: relative;
+        }
+
+        #section-3 .text-box {
+            font-size: 32px;
+            color: blue;
+            font-weight: 900;
+            text-align: center;
+            line-height: 100px;
+            letter-spacing: 20px;
+
+            position: absolute;
+            left: calc(50% - 150px);
+            top: calc(50% - 50px);
+
+        }
+
+        #section-4 {
+            width: 100%;
+            padding: 50px 80px;
+            background-color: gold;
+        }
+
+        #section-5 {
+            width: 100%;
+            height: 400px;
+            background-image: url('img/bg03.jpg');
+            position: relative;
+        }
+
+        #section-5 .text-box {
+            font-size: 32px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            line-height: 100px;
+            letter-spacing: 20px;
+
+            position: absolute;
+            left: calc(50% - 150px);
+            top: calc(50% - 50px);
+        }
+
+        #section-6 {
+            width: 100%;
+            padding: 50px 80px;
+            background-color: gold;
+        }
+
+        #section-7 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('img/bg04.webp');
+            position: relative;
+        }
+
+
+        #section-7 .mask-2 .text-box {
+            width: 300px;
+            height: 100px;
+            background-color: gold;
+
+            font-size: 32px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            line-height: 100px;
+            letter-spacing: 20px;
+
+            position: absolute;
+            left: calc(50% - 150px);
+            top: calc(50% - 50px);
+        }
+
+        #nav {
+            width: 100%;
+            height: 100px;
+            background-color: gold;
+            padding: 20px 80px;
+        }
+
+        .btn {
+            color: white;
+            width: 80px;
+            height: 50px;
+            background-color: blue;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+            margin: 0 10px 0 0;
+            font-family: monospace;
+            border-radius: 10px;
+
+
+        }
+
+        .btn:hover {
+            color: blue;
+            background-color: gold;
+        }
+
+        #backtotop {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background-color: blue;
+            border-radius: 50%;
+            z-index: 9;
+        }
+
+
+
+
+        #backtotop:hover {
+            color: blue;
+            background-color: gold;
+            transition: 0.8s;
+
+        }
+
+        #section-7 .mask-2 .text-box:hover {
+            background-image: url('img/logo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="nav">
+        <a href="#section-3">
+            <div class="btn">GOODS</div>
+        </a>
+        <a href="#section-5">
+            <div class="btn">FOOD</div>
+        </a>
+        <a href="#section-2">
+            <div class="btn">HOME</div>
+        </a>
+        <a href="#section-7">
+            <div class="btn">Hej da!</div>
+        </a>
+    </div>
+    <a href="#section-1">
+        <div id="backtotop">backtotop
+        </div>
+    </a>
+
+    <div id="section-1" class="bg-setting">
+        <div class="mask"> <a href="https://www.ikea.com.tw/zh">
+                <div class="text-box">IKEA</div>
+            </a>
+
+        </div>
+
+    </div>
+    <div id="section-2">
+        <h3>HOME</h3>
+        <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than
+            the
+            foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at,
+            sed
+            posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis
+            blandit
+            dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur
+            aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl
+            dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio.
+            Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula
+            lorem
+            mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
+            augue etiam maecenas, porta porttitor placerat leo.</p>
+
+    </div>
+    <div id="section-3" class="bg-setting">
+        <div class="text-box">GOODS</div>
+    </div>
+    <div id="section-4">
+        Scroll up and down to really get the feeling of how Parallax Scrolling works.
+    </div>
+    <div id="section-5" class="bg-setting">
+        <div class="text-box">FOOD</div>
+    </div>
+    <div id="section-6">
+        Scroll up and down to really get the feeling of how Parallax Scrolling works.
+    </div>
+
+    <div id="section-7" class="bg-setting">
+        <div class="mask-2">
+            <div class="text-box">Hej da!</div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
